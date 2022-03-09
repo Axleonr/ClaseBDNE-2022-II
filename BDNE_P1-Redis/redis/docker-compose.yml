@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+        serv:
+                image: redis-bdne
+                build: .
+                volumes:
+                      - type: bind
+                        source: .
+                        target: "/source"
+                ports: 
+                      - "6379:6379"
+
+        clnt:
+                image: redis-bdne
+                entrypoint: ["bash"]
+                tty: true
