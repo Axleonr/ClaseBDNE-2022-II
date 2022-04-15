@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+    cassandra:
+        image: "cassandra"
+        build: .
+        ports:
+        - "9042:9042" 
+        volumes:
+            - type: bind
+              source: .
+              target: "/source"
+
+
+        tty: true
+
