@@ -3,6 +3,6 @@ Entregas de la clase de Bases de Datos no Estructuradas
 
 Colaboradores:
 
--Daniel Acosta
--Eduardo Garduño
--Alejandro León
+- Daniel Acosta
+- Eduardo Garduño
+- Alejandro León
