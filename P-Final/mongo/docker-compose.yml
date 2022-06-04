@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+    mongo:
+        image: "mongo"
+        container_name: pfinal_mongo
+        build: .
+        ports:
+        - "27017:27017" 
+        volumes:
+            - type: bind
+              source: .
+              target: "/source"
+
+        tty: true
+
